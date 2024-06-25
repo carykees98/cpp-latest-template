@@ -22,3 +22,8 @@ target_compile_features(template
 PRIVATE 
     cxx_std_23
 )
+
+set_target_properties(template
+PROPERTIES
+    CXX_CLANG_TIDY "${CLANG_TIDY_COMMAND}"
+)

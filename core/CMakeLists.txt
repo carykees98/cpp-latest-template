@@ -1,6 +1,6 @@
 file(GLOB HEADER_LIST CONFIGURE_DEPENDS "${CMAKE_SOURCE_DIR}/include/*.hpp")
 
-add_library(template)
+add_executable(template)
 
 target_sources(template
 PRIVATE

@@ -1,10 +1,18 @@
 # C++ Latest Template
 
-## Steps To Configure
+## Setup
+
+```sh
+git clone https://github.com/carykees98/cpp-latest-template --recursive
+```
+
+### Configuration
 
 - Update Project Name in `CMakeLists.txt`
+- Update Target Names in `CMakeLists.txt`
 
-## Build Instructions
+### Build Instructions
 ```sh
-cmake --build -G Ninja -B build
+cmake -G Ninja -B build
+cmake --build build
 ```

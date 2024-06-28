@@ -1,35 +1,34 @@
 AlignAfterOpenBracket: Align
 AlignArrayOfStructures: Left
 AlignConsecutiveAssignments:
-    Enabled: true
-    AcrossEmptyLines: false
-    AcrossComments: true
-    AlignCompound: true
-    PadOperators: true
+  Enabled: true
+  AcrossEmptyLines: false
+  AcrossComments: true
+  AlignCompound: true
+  PadOperators: true
 AlignConsecutiveBitFields:
-    Enabled: true
-    AcrossEmptyLines: true
-    AcrossComments: true
+  Enabled: true
+  AcrossEmptyLines: true
+  AcrossComments: true
 AlignConsecutiveDeclarations:
-    Enabled: true
-    AcrossEmptyLines: false
-    AcrossComments: true
-    AlignFunctionPointers: false
+  Enabled: true
+  AcrossEmptyLines: false
+  AcrossComments: true
+  AlignFunctionPointers: false
 AlignConsecutiveMacros:
-    Enabled: true
-    AcrossEmptyLines: false
-    AcrossComments: true
+  Enabled: true
+  AcrossEmptyLines: false
+  AcrossComments: true
 AlignConsecutiveShortCaseStatements:
-    Enabled: true
-    AcrossEmptyLines: true
-    AcrossComments: true
-    AlignCaseArrows: true
-    AlignCaseColons: false
-AlignEscapedNewlines: LeftWithLastLine
+  Enabled: true
+  AcrossEmptyLines: true
+  AcrossComments: true
+  AlignCaseColons: false
+AlignEscapedNewlines: Left
 AlignOperands: AlignAfterOperator
 AlignTrailingComments:
-    Kind: Always
-    OverEmptyLines: 2
+  Kind: Always
+  OverEmptyLines: 2
 AllowAllArgumentsOnNextLine: false
 AllowAllParametersOfDeclarationOnNextLine: false
 AllowBreakBeforeNoexceptSpecifier: OnlyWithParen
@@ -71,20 +70,20 @@ IndentCaseBlocks: true
 IndentCaseLabels: false
 IndentExternBlock: true
 IndentGotoLabels: false
-IndentPPDirectives: true
+IndentPPDirectives: BeforeHash
 IndentRequiresClause: false
 IndentWidth: 4
 IndentWrappedFunctionNames: false
 InsertBraces: true
 InsertNewLineAtEOF: true
-InsertTrailingCommas: wrapped
+InsertTrailingCommas: Wrapped
 IntegerLiteralSeparator:
-    Binary: 4
-    BinaryMinDigits: 8
-    Decimal: 3
-    DecimalMinDigits: 4
-    Hex: -1
-KeepEmptyLinesAtEOF: 1
+  Binary: 4
+  BinaryMinDigits: 8
+  Decimal: 3
+  DecimalMinDigits: 4
+  Hex: -1
+KeepEmptyLinesAtEOF: true
 KeepEmptyLinesAtTheStartOfBlocks: false
 LambdaBodyIndentation: Signature
 LineEnding: DeriveLF
@@ -98,10 +97,10 @@ ReferenceAlignment: Left
 ReflowComments: true
 RequiresClausePosition: WithPreceding
 RequiresExpressIndentation: OuterScope
-SeparateDefinitionBlocks: true
+SeparateDefinitionBlocks: Always
 ShortNamespaceLines: 0
 SortIncludes: CaseInsensitive
-SortUsingDeclarations: LexiographicNumeric
+SortUsingDeclarations: LexicographicNumeric
 SpaceAfterCStyleCast: false
 SpaceAfterLogicalNot: false
 SpaceAfterTemplateKeyword: false
@@ -118,7 +117,7 @@ SpacesBeforeTrailingComments: 1
 SpacesInAngles: Never
 SpacesInContainerLiterals: true
 SpacesInLineCommentsPrefix:
-    Minimum: 1
+  Minimum: 1
 SpacesInParens: Never
 SpacesInSquareBrackets: false
 Standard: Latest

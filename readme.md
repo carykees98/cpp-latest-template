@@ -11,7 +11,7 @@ git clone https://github.com/carykees98/cpp-latest-template --recursive
 - Update `project` name in `CMakeLists.txt`
 - Update `target` names in `src/CMakeLists.txt` and `core/CMakeLists.txt`
 
-### Build Instructions
+## Build Instructions
 
 ### With `make`
 ```sh

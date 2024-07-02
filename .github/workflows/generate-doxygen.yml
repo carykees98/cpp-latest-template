@@ -43,4 +43,4 @@ jobs:
         run: |
           git add --force docs
           git commit -m "Generated Doxygen Documentation"
-          git push
+          git push --set-upstream origin pages

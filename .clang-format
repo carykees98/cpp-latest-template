@@ -94,7 +94,6 @@ QualifierAlignment: Leave
 ReferenceAlignment: Left
 ReflowComments: true
 RequiresClausePosition: WithPreceding
-RequiresExpressIndentation: OuterScope
 SeparateDefinitionBlocks: Always
 ShortNamespaceLines: 0
 SortIncludes: CaseInsensitive

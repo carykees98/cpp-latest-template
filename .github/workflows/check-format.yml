@@ -1,17 +1,22 @@
 name: check-format
 
 on: 
-    push: 
-      paths:
-        - "**.cpp"
-        - "**.hpp"
-        - "**.h"
+  workflow_dispatch:
+  push: 
+    paths:
+      - "**.cpp"
+      - "**.hpp"
+      - "**.h"
+      - ".github/workflows/generate-doxygen.yml"
+      - ".clang-tidy"
 
-    pull_request:
-      paths:
-        - "**.cpp"
-        - "**.hpp"
-        - "**.h"
+  pull_request:
+    paths:
+      - "**.cpp"
+      - "**.hpp"
+      - "**.h"
+      - ".github/workflows/generate-doxygen.yml"
+      - ".clang-tidy"
 
 jobs:
   check-format:

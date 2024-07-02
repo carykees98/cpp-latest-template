@@ -3,12 +3,12 @@ on:
     branches:
       - main
     paths:
-      - **.cpp
-      - **.hpp
-      - **.h
-      - doxygen/Doxyfile.in
-      - doxygen/header.html
-      - .github/workflows/generate-doxygen.yml
+      - "**.cpp"
+      - "**.hpp"
+      - "**.h"
+      - "doxygen/Doxyfile.in"
+      - "doxygen/header.html"
+      - ".github/workflows/generate-doxygen.yml"
 
 jobs:
   generate-docs:

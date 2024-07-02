@@ -48,6 +48,7 @@ jobs:
           path: github-pages
   
   deploy-docs:
+    name: "Deploy Docs"
     needs: generate-docs
 
     permissions:

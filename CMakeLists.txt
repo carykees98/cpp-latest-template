@@ -4,6 +4,8 @@ find_package(Doxygen)
 find_program(CLANG_TIDY_EXE NAMES "clang-tidy" REQUIRED)
 set(CLANG-TIDY_COMMAND "${CLANG_TIDY_EXE} --format-style=file")
 
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
 project(CPPTemplate
     VERSION 0.1.0
     DESCRIPTION "A C++ Project Template"

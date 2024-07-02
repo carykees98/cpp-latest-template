@@ -8,8 +8,8 @@ git clone https://github.com/carykees98/cpp-latest-template --recursive
 
 ### Configuration
 
-- Update `project` Name in `CMakeLists.txt`
-- Update `target` Names in `src/CMakeLists.txt` and `core/CMakeLists.txt`
+- Update `project` name in `CMakeLists.txt`
+- Update `target` names in `src/CMakeLists.txt` and `core/CMakeLists.txt`
 
 ### Build Instructions
 ```sh

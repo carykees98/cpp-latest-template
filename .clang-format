@@ -47,7 +47,6 @@ BitFieldColonSpacing: Both
 BreakAdjacentStringLiterals: true
 BreakAfterAttributes: Always
 BreakAfterJavaFieldAnnotations: true
-BreakAfterReturnType: None
 BreakArrays: true
 BreakBeforeBinaryOperators: All
 BreakBeforeBraces: Allman

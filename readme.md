@@ -12,6 +12,21 @@ git clone https://github.com/carykees98/cpp-latest-template --recursive
 - Update `target` names in `src/CMakeLists.txt` and `core/CMakeLists.txt`
 
 ### Build Instructions
+
+### With `make`
+```sh
+cmake -B build
+cmake --build build
+```
+
+### With `ninja`
+If you don't have `ninja` installed it can be installed in Debian and its derivatives with the following command
+```sh
+sudo apt install ninja-build
+```
+
+Then run the following to configure CMake and build the project
+
 ```sh
 cmake -G Ninja -B build
 cmake --build build

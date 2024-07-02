@@ -63,7 +63,7 @@ ContinuationIndentWidth: 4
 Cpp11BracedListStyle: false
 EmptyLineAfterAccessModifier: Never
 EmptyLineBeforeAccessModifier: LogicalBlock
-FixNameSpaceComments: true
+FixNamespaceComments: true
 IncludeBlocks: Preserve
 IndentCaseBlocks: true
 IndentCaseLabels: false

@@ -1,0 +1,41 @@
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - **.cpp
+      - **.hpp
+      - **.h
+      - doxygen/Doxyfile.in
+      - doxygen/header.html
+      - .github/workflows/generate-doxygen.yml
+
+jobs:
+  generate-docs:
+      name: "Generate Docs"
+      runs-on: ubuntu-24.04
+      permissions:
+        contents: read
+      steps:
+        - uses: actions/checkout@v4
+          with: 
+            ref: main
+        - name: Configure `git` User
+          run: |
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        - name: Switch to `pages` Branch and merge in main
+          run: |
+            git checkout -b pages
+            git merge main -m "Merge main into pages"
+        - name: Install Required Packages
+          run: apt update && apt install cmake doxygen graphviz make -y
+        - name: Generate CMake Build Files
+          run: cmake -B build
+        - name: Generate Documentation
+          run: cmake --build build --target doc
+        - name: Commit and Push Documentation
+          run: |
+            git add .
+            git commit -m "Generated Doxygen Documentation"
+            git push

@@ -74,7 +74,6 @@ IndentRequiresClause: false
 IndentWidth: 4
 IndentWrappedFunctionNames: false
 InsertBraces: true
-InsertNewLineAtEOF: true
 InsertTrailingCommas: Wrapped
 IntegerLiteralSeparator:
   Binary: 4

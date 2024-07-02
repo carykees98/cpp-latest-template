@@ -19,28 +19,30 @@ jobs:
     runs-on: ubuntu-24.04
     permissions:
       contents: read
+    environment:
+      name: github-pages
+      url: ${{steps.deployment.outputs.page_url}}
+
     steps:
       - name: Checkout to `main` Branch
         uses: actions/checkout@v4
         with: 
           ref: main
           submodules: true
-      - name: Configure `git` User
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-      - name: Switch to `pages` Branch and Merge in `main`
-        run: |
-          git checkout -b pages
-          git merge main -m "Merge main into pages"
+
       - name: Install Required Packages
-        run: sudo apt-get update && sudo apt-get install cmake doxygen graphviz make -y
+        run: sudo apt-get update && sudo apt-get install cmake doxygen clang graphviz make -y
+
       - name: Generate CMake Build Files
         run: cmake -B build
+
       - name: Generate Documentation
         run: cmake --build build --target doc
-      - name: Commit and Push Documentation
-        run: |
-          git add --force docs
-          git commit -m "Generated Doxygen Documentation"
-          git push --set-upstream origin pages
+
+      - name: Move `docs` to `github-pages`
+        run: mv docs github-pages
+
+      - name: Upload `github-pages` Artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: github-pages

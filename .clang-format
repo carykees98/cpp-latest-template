@@ -52,10 +52,9 @@ BreakBeforeBinaryOperators: All
 BreakBeforeBraces: Allman
 BreakBeforeConceptDeclarations: Always
 BreakBeforeTernaryOperators: true
-BreakConstructorInitalizers: BeforeColon
+BreakConstructorInitializers: BeforeColon
 BreakInheritanceList: BeforeColon
 BreakStringLiterals: true
-BreakTemplateDeclarations: Yes
 ColumnLimit: 80
 CompactNamespaces: false
 ContinuationIndentWidth: 4
@@ -112,7 +111,7 @@ SpaceInEmptyBlock: true
 SpacesBeforeTrailingComments: 1
 SpacesInAngles: Never
 SpacesInContainerLiterals: true
-SpacesInLineCommentsPrefix:
+SpacesInLineCommentPrefix:
   Minimum: 1
 SpacesInParens: Never
 SpacesInSquareBrackets: false

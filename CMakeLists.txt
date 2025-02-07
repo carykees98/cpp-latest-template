@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.20...3.30)
 
 find_package(Doxygen)
 find_program(CLANG_TIDY_EXE NAMES "clang-tidy" REQUIRED)
-set(CLANG-TIDY_COMMAND "${CLANG_TIDY_EXE} --format-style=file")
+set(CLANG_TIDY_COMMAND "${CLANG_TIDY_EXE} --format-style=file")
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
